@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Fuzzy+Bubbles&family=Libre+Baskerville:ital@1&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Titillium+Web:wght@300&family=Varela+Round&display=swap');
+
+
+:root{
+    --text_green : #49B649;
+    --text_white : #FFFFFF;
+    --background : #000000;
+    --bgColor: #FEDCC5;
+    --lg-color: #FFFFFF4D;
+    --white-color:#FFFFFF;
+    --text1: #F25019;
+    --text2: #000000;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+
+    
+}
+
+.Container_home{
+    max-width: 100%;
+    max-height: 100vh;
+    /* position: relative; */
+}
+
+body{
+    background-color: var(--background);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.main .menu_btn{
+    margin-right: 20px;
+    color: var(--text_white);
+    transition: 0.5s;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.main .btn{
+    padding: 9px 25px;
+    background-color: var(--text_green);
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text_white);
+    border: 1px solid var(--text_green);
+    transition: 0.5s;
+}
+.main .btn:hover{
+    background-color: var(--background);
+    color: var(--text_green);
+}
+
+.main .menu_btn:hover{
+
+    color: var(--text_green);
+}
+
+.logo img{
+    width: 107px;
+    height: 107px;
+}
+
+.home_page img{
+    width: 422px;
+    height: 482px;
+}
+
+.home_page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.home_page .home_text{
+    /* display: inline-block; */
+    flex: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transform: translate(0, -130px); */
+    color: var(--text_white);
+    height: 100%;
+}
+
+.home_page .home_text span{
+    color: var(--text_green);
+}
+
+.home_page .home_text .button_technical{
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: var(--text_green);
+    color:var(--text_white);
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--text_green);
+    transition: 0.5s;
+}
+
+
+
+.home_page .home_text a:hover{
+    color: var(--text_green);
+    background-color: var(--background);
+}
+
+.home_page .home_img{
+    flex: 38%;
+}
+.home_page .home_text h3{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.slide{
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img{
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bk_text{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Images/unsplash_OCrPJce6GPk.png');;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--text_white);
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+}
+
+.isd_txt{
+    margin: 0px 90px;
+    display: flex;
+}
+
+
+.bk_text span{
+    color: var(--text_green);
+}
+
+.bk_text .lft_text{
+    flex: 50%;
+    padding: 50px 230px;
+    font-size: 30px;
+}
+
+.bk_text .rgt_txt{
+    flex: 50%
+}
+
+.last_txt{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.last_img img{
+    flex: 50%;
+    width: 520px;
+    height: 369px;
+}
+
+.txt_last{
+    color: var(--text_white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    flex:50%  
+}
+
+.txt_last .small_txt{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.txt_last span{
+    color: var(--text_green);
+}
+
+.txt_last .last_pg{
+    padding: 9px 30px;
+    margin-top: 8px;
+    color: var(--text_white);
+    font-size: 20px;
+    background-color: var(--text_green);
+    border-radius: 12px;
+    border: 1px var(--text_green);
+    transition: 0.2s;
+}
+
+.txt_last .last_pg:hover{
+    background-color: var(--text2);
+    color: var(--text_green);
+}
+/* ------Login------ */
+.login{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor);
+    z-index: 1000;
+    position: absolute;
+    top: -700px;
+    transition: 0.3s;
+}
+
+.login .loginImg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    max-width:48%;
+    z-index: 1;
+}
+
+.login{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.form-login{
+    flex: 50%;
+    background-color: var(--lg-color);
+    height: 500px;
+    max-width:370PX ;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.chicken{
+    flex: 50%;
+    max-width: 50%;
+    margin-left: 50px;
+}
+
+.form-login .logo{
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.form-login .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.form-login .logo .text1{
+    color: var(--text1);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+.form-login .logo .text2{
+    color: var(--text2);
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.login-format{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:center;
+    padding: 50px;
+}
+
+.form-login .login-format .main .text3{
+    margin-bottom: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-login .login-format .main .text4{
+    margin-bottom: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-login .login-format .main .text5{
+    margin-bottom: 7px;
+    font-size: 10px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-login .login-format .main input{
+    margin-bottom: 7px;
+}
+
+.form-login .login-format .main .btn{
+    text-decoration: none;
+    padding: 5px 5px;
+    color: white;
+    border-color: transparent;
+    font-size: 17px;
+    font-weight: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--text1);
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.design_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 80px;
+    padding: 50px;
+    color: var(--text_white);
+}
+
+.design_img .money{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.design_img .money .txt_money{
+    font-size: 25px;
+}
+
+.design_img .money img{
+    height: 70px;
+    width: 70px;
+}
+ 
+
+/* ---------- end login-------- */
+
+.bottom_text{
+    text-align: center;
+    color: var(--text_white);
+    margin: 65px;
+}
+
+.bottom_text h3{
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.bottom_text p{
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.bottom_text span{
+    color: var(--text_green);
+}
+
